@@ -36,11 +36,12 @@
 
 .info__container {
   /* background-color: aqua; */
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  }
+  margin-bottom: 20px;
+}
 
 @media (max-width: 1050px) {
   .info__container {
@@ -57,7 +58,34 @@
   /* background-color: blue; */
 }
 
-.card-body{
+.card-body {
   text-align: left;
 }
 
+.services {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1010px) {
+  .slide {
+    --bs-carousel-items: 1 !important;    
+     /* background-color: red; */;
+  }
+  .carousel__service{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1500px) {
+  .slide {
+    --bs-carousel-items: 4 !important;    
+     /* background-color: red; */;
+  }
+}
+
+
+.contact {
+  padding: 0px 100px 0px 100px;
+  margin-bottom: 80px;
+}
